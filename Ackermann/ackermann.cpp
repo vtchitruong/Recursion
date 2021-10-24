@@ -5,7 +5,7 @@ using namespace std;
 int akm(int m, int n, int *cnt)
 {
     // track the number of times the function is called
-    (*cnt)++;
+    (*cnt)++; // count
 
     if (!m) return n + 1;
     if (!n) return akm(m - 1, 1, cnt);
