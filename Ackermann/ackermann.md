@@ -1,4 +1,4 @@
-Write a recursive function to calculate the Ackermann fucntion.  
+Write a recursive function to calculate the Ackermann function.  
   
 Ackerman function A(m, n) =  
 = n + 1 if m = 0  
