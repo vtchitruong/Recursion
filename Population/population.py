@@ -4,6 +4,7 @@ def population(year):
 
     return population(year - 1) * (1 + 0.01) # The growth rate is 1.00
 
+
 if __name__ == '__main__':
     year = int(input('Enter a year: '))
     p = population(year)
