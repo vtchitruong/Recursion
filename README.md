@@ -20,7 +20,7 @@ n = 6
 ## Fibonacci
 
 Viết hàm tính giá trị của số Fibonacci thứ *n*.  
-$$\F_n = F_n _- _1 + F_n _- _2$$  
+$$\F_n = F_{n - 1} + F_{n - 2}$$  
 
 **Input**  
 n = 10  
