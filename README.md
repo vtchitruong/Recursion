@@ -13,15 +13,17 @@ Cấu trúc của hàm đệ quy có thể được mô tả như sau:
 **Các bước đệ quy**: Trong các bước này, hàm đệ quy gọi lại chính nó với tham số *nhỏ hơn*, hoặc đôi khi *lớn hơn*, nói chung là *đơn giản hơn*, để dần dần đạt đến trường hơp cơ sở.  
 
 ```
-void recursive_function(tham_số_n):
+void recursive_function(tham_số_n)
+{
     // Trường hợp cơ sở
-    if (điều_kiện_trường_hợp_cơ_sở):
+    if (điều_kiện_trường_hợp_cơ_sở)
         return giá_trị_của_trường_hợp_cơ_sở;
     
     // Đệ quy
     result = recursive_function(n - 1) // hoặc n nào đó nhỏ hơn
     các_lệnh_xử_lý_nếu_có;      
     return result;
+}
 ```
 
 ## Bài tập  
