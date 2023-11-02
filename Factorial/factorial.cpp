@@ -2,23 +2,24 @@
 
 using namespace std;
 
-typedef long long int lol;
-
-lol fact(int n)
+int factorial(int n)
 {
+    // Trường hợp cơ sở
     if (n == 0 || n == 1)
         return 1;
 
-    return n * fact(n - 1);
+    // Trường hợp đệ quy
+    return factorial(n - 1) * n;
 }
-
-
 
 int main()
 {
-    int N = 6;
-    lol f = fact(N);
-    cout << N << "! = " << f;
+    int num;
+    cout << "Nhập số nguyên dương: ";
+    cin >> num;
+
+    int result = factorial(num);
+    cout << num << "! = " << result;
 
     return 0;
 }

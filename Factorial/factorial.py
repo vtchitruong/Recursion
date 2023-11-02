@@ -1,11 +1,13 @@
-def fact(n):
+def factorial(n):
+    # Trường hợp cơ sở
     if n == 0 or n == 1:
         return 1
-    
-    return n * fact(n - 1)
 
+    # Trường hợp đệ quy
+    return factorial(n - 1) * n
 
 if __name__ == '__main__':
-    N = 6
-    f = fact(N)
-    print(f'{N}! = {f}')
+    num = int(input('Nhập số nguyên dương: '))
+
+    result = factorial(num)
+    print(f'{num}! = {result}')

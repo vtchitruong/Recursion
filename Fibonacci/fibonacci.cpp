@@ -2,21 +2,27 @@
 
 using namespace std;
 
-int fibo(int n)
+int fibonacci(int n)
 {
+    // Trường hợp cơ sở
     if (n == 0)
         return 0;
-    
+
     if (n == 1)
         return 1;
 
-    return fibo(n - 1) + fibo(n - 2);
+    // Trường hợp đệ quy
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 int main()
 {
-    int N = 10;
-    cout << "Fibonacci(" << N << ") = " << fibo(N);
+    int num;
+    cout << "Nhập số nguyên dương: ";
+    cin >> num;
 
+    int result = fibonacci(num);
+    cout << "Fibonacci [" << num << "] = " << result;
+    
     return 0;
 }

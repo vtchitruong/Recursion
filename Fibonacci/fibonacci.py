@@ -1,14 +1,16 @@
-def fibo(n):
+def fibonacci(n):
+    # Trường hợp cơ sở
     if n == 0:
         return 0
-    
+
     if n == 1:
         return 1
-    
-    return fibo(n - 1) + fibo(n - 2)
 
+    # Trường hợp đệ quy
+    return fibonacci(n - 1) + fibonacci(n - 2)
 
 if __name__ == '__main__':
-    N = 10
-    f = fibo(N)
-    print(f'Fibonacci({N}) = {f}')
+    num = int(input('Nhập số nguyên dương: '))
+
+    result = fibonacci(num)
+    print(f'Số Fibonacci thứ {num} là {result}')
