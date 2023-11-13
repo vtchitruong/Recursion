@@ -19,13 +19,13 @@ void HaNoiTower(int disk, int source, int target)
 
     spare = 6 - (source + target);
     
-    // move upper (n - 1) disks to the spare rod
+    // move upper n - 1 disks to the spare rod
     HaNoiTower(disk - 1, source, spare);
 
     // move the n-th disk (the bottom disk) to the target rod
     guide(disk, source, target);
 
-    // move (n - 1) remaining disks to the target rod
+    // move n - 1 remaining disks to the target rod
     HaNoiTower(disk - 1, spare, target);
 }
 

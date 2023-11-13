@@ -11,13 +11,13 @@ def hanoi_tower(disc, source, target):
     
     spare = 6 - (source + target)
 
-    # Di chuyển (n - 1) đĩa nằm trên sang cột trung gian
+    # Di chuyển n - 1 đĩa nằm trên sang cột trung gian
     hanoi_tower(disc - 1, source, spare)
 
-    # Di chuyển đĩa-thứ-n (nằm dưới cùng) sang cột đích 
+    # Di chuyển đĩa thứ n (nằm dưới cùng) sang cột đích 
     guide(disc, source, target)
 
-    # Di chuyển (n - 1) đĩa còn lại từ cột trung gian sang cột đích
+    # Di chuyển n - 1 đĩa còn lại từ cột trung gian sang cột đích
     hanoi_tower(disc - 1, spare, target)
 
 
